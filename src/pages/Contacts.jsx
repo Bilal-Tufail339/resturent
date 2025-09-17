@@ -19,7 +19,7 @@ const Contacts = () => {
     firstName: "",
     lastName: "",
     email: "",
-    password: "",
+    comment: "",
   });
 
   const handleChange = (e) => {
@@ -37,7 +37,7 @@ const Contacts = () => {
       firstName: "",
       lastName: "",
       email: "",
-      password: "",
+      comment: "",
     });
 
     alert("Form Submitted !");
@@ -134,10 +134,10 @@ const Contacts = () => {
             required
           />
           <TextField
-            label="Password"
-            name="password"
-            type="password"
-            value={formData.password}
+            label="comment"
+            name="comment"
+            type="comment"
+            value={formData.comment}
             onChange={handleChange}
             fullWidth
             required
