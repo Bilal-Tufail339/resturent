@@ -1,0 +1,40 @@
+.nevigation-menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.active{
+  color: goldenrod !important;
+  font-weight: bold !important;
+}
+
+.nevigation-menu li {
+  margin: 0 20px;
+}
+
+.nevigation-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nevigation-menu li a:hover {
+  color: goldenrod;
+}
+
+.Mobile-nevigation {
+  list-style: none;
+  padding: 0;
+}
+
+.Mobile-nevigation li {
+  margin: 15px 0;
+}
+
+.Mobile-nevigation li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
