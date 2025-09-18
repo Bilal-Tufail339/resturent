@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box,Typography} from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -10,38 +10,67 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 const Footer = () => {
   return (
     <>
-    <Box sx={{textAlign:'center',bgcolor:'#1A1A19', padding:1,color:'white',alignItems:'center' ,}}>
-      <Box sx={{my:3,
-      "  & svg":{
-        fontSize:'40px',
-        cursor:'pointer',
-        mr:2,
-      },
-      "& svg:hover":{
-        color:'goldenrod',
-        transform:'translateX(5px)',
-        transition: 'all 400ms'
+      <Box 
+        sx={{
+          textAlign: 'center',
+          bgcolor: '#1A1A19',
+          padding: 1,
+          color: 'white',
+          alignItems: 'center',
+        }}
+      >
+        <Box
+          sx={{
+            my: 3,
+            "& svg": {
+              fontSize: '40px',
+              cursor: 'pointer',
+              mr: 2,
+            },
+              "& a": {
+      color: "white",          // ✅ sab anchor white
+      textDecoration: "none",  // underline hatao
+    },
+            "& svg:hover": {
+              color: 'goldenrod',
+              transform: 'translateX(5px)',
+              transition: 'all 400ms',
+            }
+          }}
+        >
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" sx={{color:'white'}}>
+            <InstagramIcon />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <FacebookIcon />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <LinkedInIcon />
+          </a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+            <PinterestIcon />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <YouTubeIcon />
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <XIcon />
+          </a>
+        </Box>
 
-      }
-      }}>
-<InstagramIcon/>
-<FacebookIcon/>
-<LinkedInIcon/>
-<PinterestIcon/>
-<YouTubeIcon/>
-<XIcon/>
-
+        <Typography
+          variant="h5"
+          color="white"
+          sx={{
+            "@media (max-width:600px)": {
+              fontSize: '1rem',
+            }
+          }}
+        >
+          All Rights Reserved &copy; coding YT
+        </Typography>
       </Box>
-      <Typography variant="h5" color="white" sx={{
-      " @media (max-width:600px)":{
-        fontSize:'1rem',
-      }
-      }}>
-        All Rights Reserved &copy; coding YT
-      </Typography>
-    </Box>
     </>
-    
   )
 }
 

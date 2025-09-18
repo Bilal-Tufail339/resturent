@@ -23,7 +23,7 @@
   "preview": "vite preview",
   
     
-  "deploy": "npm run build && git add . && git commit -m \"deploy update\" && git push origin main"
+ "deploy": "vite build && gh-pages -d dist"
   
   },
   
